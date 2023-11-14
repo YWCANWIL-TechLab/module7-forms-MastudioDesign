@@ -5,6 +5,7 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <title>Exercise 2</title>
         <meta name="description" content="">
+        <meta name="author" content="Paula Krumwiede">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="icon" href="../images/logo_ywca_32by32.png">
         <link rel="stylesheet" href="../styles/index.css">
@@ -84,6 +85,109 @@
             </p>
         </section>
         <section id="answers" class="container">
+            <!--Ex2-Q.1-->
+            <form id="1">
+                <p><Legend><strong>Personal Information</strong></Legend></p>
+                <label for="fname">First Name</label><br>
+                <input type="text" id="fname" name="fname" value="John"><br>
+                <label for="lname">Last Name</label><br>
+                <input type="text" id="lname" name="lname" value="Doe"><br>
+            </form>
+            <!--Ex2-Q.2-->
+            <form id="2">
+                <p><Strong>Personal Information</Strong></p>
+                <label for="fname">First Name</label><br>
+                <input type="text" id="fname" name="fname" value="Nakenda"><br>
+                <label for="fname">Middle Name</label><br>
+                <input type="text" id="mfname" name="mname" value="Disabled" disabled><br>
+                <label for="lname">Last Name</label><br>
+                <input type="text" id="lname" name="lname" value="Sadler"><br>
+            </form>
+            <!--Ex2-Q.3-->
+            <form id="3">
+                <p><strong>Password</strong></p>
+                <input type="text" placeholder="Enter your user name:">
+                <br>
+                <input type="password" placeholder="Enter your password" readonly>
+            </form>
+            <!--Ex2-Q.4-->
+            <form id="4">
+                <p>Text Area</strong></p>
+                <textarea id="review" name="review" placeholder="Leave a review!" cols="50"></textarea>
+                <br>
+                <input type="reset">
+            </form>
+            <!--Ex2-Q.5-->
+            <form id="5">
+                <p><strong>Text Area</strong></p>
+                <br>
+                <textarea id="review" name="review" placeholder="Leave a review!" maxlength="100" size="50"></textarea>
+                <br>
+                <input type="reset">
+            </form>
+            <br>
+            <!--Ex2-Q.6-->
+            <form id="6">
+                <p><strong>Covid-19 Pandemic</strong></p>
+                <br>
+                <label for="datemmin">Enter the date after Jan 31, 2020</label>
+                <input type="date" id="datemin" name="datemin" max="2020-1-31"><br>
+                <label for="datemax">Enter the date before May 11, 2023</label>
+                <input type="date" id="datemax" name="datemax" max="2023-5-12"><br>
+            </form>
+            <br>
+            <!--Ex2-Q.7-->
+            <form id="7">
+                <label for="files">Please submit the HTML files for your web site.</label>
+                <input type="file" id="file" name="file" multiple>
+            </form>
+            <br>
+            <!--Ex2-Q.8-->
+            <form id="8">
+                <p><strong>Google Search</strong></p>
+                <br>
+                <label for="gsearch">What is your question for Google?</label>
+                <input type="search" id="gsearch" name="gsearch" placeholder="Type here">
+                <input type="button" value="submit">
+            </form>
+            <br>
+            <!--Ex2-Q.9-->
+            <form id="9">
+                <p><strong>Favorite Number</strong></p>
+                <br>
+                <label for="fav-number"> What is your favorite number</label>
+                <input type="number" id="fav-number" name="fav-number" autofocus>
+                <input type="button" value="submit"><input type="reset">
+            </form>
+            <br>
+            <!--Ex2-Q-10-->
+            <form id="10">
+                <label for="range">Select a number between 0-100.</label>
+                <input type="range" id="range" min="0" max="100" step="2">
+            </form>
+            <br>
+            <!--Ex2-11-->
+            <Form id="11"-->
+                <Legend><Strong>Personal Information</Strong></Legend>
+                <label for="fname">First Name</label><br>
+                <input type="text" id="fname" name="fname" value="First"><br>
+                <label for="lname">Last Name</label><br>
+                <input type="text" id="lname" name="lname" value="Last"><br>
+           <!--NO input image to select-->
+            </form>
+            <br>
+            <!--ex2-Q.12-->
+            <form id="12">
+                <p><strong>What is your favorite fruit?</strong></p>
+                <input list="fruit" autocomplete>
+                <datalist id="fruit">
+                    <option value="Apple">
+                    <option value="Banana">
+                    <option value="Dragon Fruit">
+                    <option value="Kiwi">
+                    <option value="Orange">
+                </datalist>
+            </form>
 
         </section>
         <script src="" async defer></script>

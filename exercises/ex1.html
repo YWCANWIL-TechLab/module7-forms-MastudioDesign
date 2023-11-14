@@ -4,6 +4,7 @@
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <title>Exercise 1</title>
+        <meta name="author" content="Paula Krumwiede"
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="icon" href="../images/logo_ywca_32by32.png">
@@ -72,7 +73,128 @@
             </p>
         </section>
         <section id="answers" class="container">
-
+            <!--Ex1-Q.1- 2 Imput Text-->
+            <form id="form1"><strong>Form-1-Input Text</strong><br>
+                <label for="lname">Last Name</label><br>
+                <input type="text" id="lname" name="lname" placeholder="Ruby"><br>
+                <label for="lname">First Name</label><br>
+                <input type="text" id="fname" name="fname" placeholder="Maxson">
+            </form>
+                <br>
+            <!--Ex1-Q.2 Radio buttons--->
+            <form id="form2"><strong>Radio Button</strong>
+                <strong>Which city would you visit first?</strong>
+                <br>
+                <input type="radio" id="city" name="fav-city" value="Chicago">
+                <Label for="city">Chicago</Label>
+                <br>
+                <input type="radio" id="city" name="fav-city" value="Rockford">
+                <Label for="city">Rockford</Label>
+                <br>
+                <input type="radio" id="city" name="fav-city" value="Nashville">
+                <Label for="city">Nashville</Label>
+                <br>
+                <input type="radio" id="city" name="fav-city" value="Las Vegas">
+                <Label for="city">Las Vegas</Label>
+                <br>
+                <input type="radio" id="city" name="fav-city" value="San Diago">
+                <Label for="city">San Diago</Label>           
+            </form>
+             <br>
+            <!--Ex1-Q.3 Check buttons--->
+            <form id="form3"><strong>Checkbox</strong>
+                <strong>city would you visit first?</strong>
+                <br>
+                <input type="checkbox" id="city" name="fav-city" value="Chicago">
+                <Label for="city">Chicago</Label>
+                <br>
+                <input type="checkbox" id="city" name="fav-city" value="Rockford">
+                <Label for="city">Rockford</Label>
+                <br>
+                <input type="checkbox" id="city" name="fav-city" value="Nashville">
+                <Label for="city">Nashville</Label>
+                <br>
+                <input type="checkbox" id="city" name="fav-city" value="Las Vegas">
+                <Label for="city">Las Vegas</Label>
+                <br>
+                <input type="checkbox" id="city" name="fav-city" value="San Diago">
+                <Label for="city">San Diago</Label>   
+            </form>
+            <br><!--Ex1-Q.4 Dropdown--->
+            <form id="Form 4">
+                    <strong>Favorite Sport</strong>
+                    <br>
+                    <label for="dropdown">Choose an Option</label>
+                    <br>
+                    <select id="dropdown" name="dropdown" multiple>
+                    <option disabled="disabled">Select an option</option>
+                    <option value="autoracing">Auto Racing</option>
+                    <option value="baseball">Baseball</option>
+                    <option value="basketball">Basketball</option>
+                    <option value="football">Football</option>
+                    <option value="hockey">Hockey</option>
+                </select>
+            </form>
+            <br>
+            <!--Ex1-Q.5-->
+            <form id="5">
+                    <strong>What is your favorite color?</strong>
+                    <br>
+                    <label for="color">Choose a color!</label>
+                    <br>
+                    <input type="color">
+            </form>
+            <br>
+            <!--Ex1-Q.6-->
+            <form id="6">
+                    <strong>This is a date picker</strong>
+                    <br>
+                    <label for="date">What is today's date?</label>
+                    <input type="date" id="date">
+            </form>
+            <br>
+            <!--Ex1-Q.7-->
+            <form id="7">
+                    <label for="date.time"><strong>Currant Date & Time</strong></label>
+                    <br>
+                    <input id="date.time" type="datetime-local">
+            </form>
+            <br>
+            <!--Ex1-Q.8-->
+            <form id="8"><strong>This is a Email:</strong>
+                   <br>
+                   <input type="email" placeholder="Enter Email">
+                   <button type="submit">Send</button>
+            </form>
+            <br>
+            <!--Ex1-Q.9-->
+            <form id="9"><strong>Upload your file.</strong>
+                    <br>
+                    <label for="filepicker">Select a file</label>
+                    <input type="file" id="filepicker" multiple="multiple">
+            </form>
+            <br>
+            <!--Ex1-Q.10-->
+            <form id="10"><strong>Select a number between 1-50.</strong>
+                    <br>
+                    <label for="number" ></label>
+                    <input type="number" id="number" min="1" max="50">
+            </form>
+            <br>
+            <!--Ex1-Q.11-->
+            <form id="11">
+                <label for="Month"><strong>Select a month:</strong></label>
+                <br>
+                <input type="month" id="month">
+            </form>
+            <br>
+            <!--Ex1-Q12-->
+            <form id="12">
+                <strong>Enter your E-Mail:</strong>
+                <br>
+                <input type="email" placeholder="Enter Email">
+                <button type="submit">Send</button>
+            </form>           
         </section>
         <script src="" async defer></script>
     </body>

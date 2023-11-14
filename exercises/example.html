@@ -1,0 +1,212 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Module 7- Forms</title>
+</head>
+
+<body>
+    <form autocomplete="on"><strong>This is the input field.</strong>
+        <br>
+        <br>
+        <!--Form elements must have lables,lables are helpful for accessibilitu, since screen readers will read the name of the lable when focusing the input. Lables tell the user what to do, text in put fields only allow 20 character-->
+        <!--Every input field must have name-->
+        <label for="first-name"> Enter your First Name: (This style is not being
+            used.)</label><!--This type of input, is outdated.-->
+        <input id="first-name" type="text=" style="display: block;"><!--Input element are inline elements-->
+        <input type="submit" value="Submit">
+        <br>
+        <input id="first-name" type="text=" placeholder="Enter your first name">(This style is being used in today's
+        HTML.)
+        <!--This is the more modern input style to use when creating a form-->
+
+        <br>
+        <!--Radio button, allows a user to select 1 andswer out of a list. They don't have the placeholder attribute, so you will need to use lables-->
+    </form>
+    <form><strong>This is the radio button input.</strong>
+        <!--Radio button, allows a user to select 1 andswer out of a list. They don't have the placeholder attribute, so you will need to use lables-->
+        <p> What favorite programming language do you want to learn?</p>
+        <input type="radio" id="html" name="lang" value="HTML">
+        <label for="html">HTML</label>
+        <br>
+        <input type="radio" id="css" name="lang" value="CSS">
+        <label for="CSS">CSS</label>
+        <br>
+        <input type="radio" id="js" name="lang" value="Java Script">
+        <label for="js">Java Script</label>
+        <br>
+        <form action="">
+            <!--Action attribute defines the action to be ezecuted when the form is submitted. The input date is sent to a file on a server that you specify as the value of the action attribue. The server file contains instructions to process data-->
+            <!--These are check boxes, and you can choose as many as you'd like.-->
+            <br>
+            <strong>These are Check Boxes.</strong>
+            <br>
+            <p> What favorite programming language do you want to learn?</p>
+            <input type="checkbox" id="C++" name="lang2" value="bike">
+            <label for="C">C++</label>
+            <br>
+            <input type="checkbox" id="python" name="lang2" value="bike">
+            <label for="python">Python</label>
+            <br>
+            <input type="checkbox" id="kotian" name="lang2" value="bike">
+            <label for="python">Kotlin</label>
+            <br>
+            <!--Submit Input Action Form, allows the user to interact with the for-->
+            <input type="submit" value="Submit"><!--Older style-->
+            <button type="submit">Click Me!</button><!--Newer style -->
+        </form>
+        <br>
+        <form>
+            <strong>Types of furniture.</strong><!--This is a select input, w/ a dropdown menu-->
+            <br>
+            <label for="dropdown">Choose an option</label>
+            <br>
+            <select id="dropdown"
+                name="dropdown"><!--Allows users to select, you can select multiple Items,by add "multiple attribute in the selected element" but don't-->
+                <option disabled="disabled">Select an option</option><!--This doesn't allow user to select-->
+                <option value="table">Table</option>
+                <option value="chair">Chair</option>
+                <option value="bed">Bed</option>
+            </select>
+        </form>
+        <br>
+        <form><!--This is a test are that allows you to enter text in a frame-->
+            <strong>This is a text area</strong>
+            <br>
+            <textarea id="review" name="review" placeholder="Leave a review!" cols="25" rows="10"></textarea>
+            <br>
+        </form>
+        <br>
+        <form>
+            <strong>This is a Datalist</strong>
+            <br>
+            <label for="schools" Select a School></label>
+            <input id="school-dropdown" name="schools" list="schools">
+            <datalist id="schools">
+                <option value="Elemantary"></option>
+                <option value="Middle"></option>
+                <option value="High School"></option>
+                <option value="College"></option>
+            </datalist>
+            <br>
+            <br>
+            <form>
+                <strong>This is a Password Input</strong>
+                <br>
+                <input type="text" placeholder="Enter your user name:">
+                <br>
+                <input type="password" placeholder="Enter your password">
+                <br>
+                <br>
+                <strong>This is a Reset</strong>
+                <input type="reset">
+                <br>
+                <br>
+                <form>
+                    <strong>This is a color picker</strong>
+                    <br>
+                    <br>
+                    <label for="color">Choose a color!</label>
+                    <input type="color">
+                </form>
+                <br>
+                <form>
+                    <strong>This is a date picker</strong><!--You can customize the dates-->
+                    <br>
+                    <label for="date">What is your Birthday?</label>
+                    <input type="date" id="date">
+                </form>
+                <br>
+                <form>
+                    <strong>This is a date Appointment</strong><!--You can customize the dates-->
+                    <br>
+                    <label for="appointment">Select an appointment time</label>
+                    <br>
+                    <input id="appointment" type="datetime-local">
+                    </form>
+                    <br>
+                    <br>
+                    <form>
+                        <strong>This is a Email:</strong>
+                        <br>
+                        <input type="email" placeholder="Enter Email">
+                        <button type="submit">Send</button>
+                    </form>
+                    <br>
+                    <form>
+                        <strong>This is a File Picker:</strong>
+                        <br>
+                        <label for="filepicker">Select a file</label>
+                        <input type="file" id="filepicker" multiple="multiple">
+                    </form>
+                    <br>
+                    <form>
+                        <strong>This is a Month:</strong>
+                        <br>
+                        <label for="Month">Select a month:</label>
+                        <input type="month" id="month">
+                    </form>
+                    <br>
+                    <form>
+                        <strong>This is a
+                            Number:</strong><!--you can add a "Min and Max in the input element, and Step attribute"-->
+                        <label for="number"></label>
+                        <input type="number" id="number">
+                    </form>
+                    <br>
+                    <form>
+                        <strong>This is a File Picker:</strong>
+                        <label for="filepicker">Select a file</label>
+                        <input type="file" id="filepicker">
+                    </form>
+                    <br>
+                    <form>
+                        <strong>This is a Input Range: Not use for Phone
+                            Numbers.</strong><!--DONOT use for phone numbers-->
+                        <br>
+                        <label for="phone-number">Enter your phone number.</label>
+                        <input type="range" id="Phone Number">
+                        <br>
+                    </form>
+                    <form>
+                        <strong>This is a Input Range for Volume:</strong>
+                        <label for="volume">Volume Control</label>
+                        <input type="range" id="Volume">
+                    </form>
+                    <br>
+                    <form>
+                        <strong>Input Type Search:</strong>
+                        <br>
+                        <label for="search">Google Search:</label>
+                        <input type="search" placeholder="Search Here">
+                    </form>
+                    <br>
+                    <form>
+                        <strong>Input Type Telephone:</strong>
+                        <input type="tel" placeholder="Enter Phone Number">
+                        <br>
+                        <br>
+                        <form>
+                            <strong>Input Time:</strong>
+                            <input type="time" placeholder="Enter Time">
+                        </form>
+                        <br>
+                        <form>
+                            <strong>Enter URL:</strong>
+                            <input type="url" placeholder="Enter URL">
+                            <button type="submit">Submit</button>
+                        </form>
+                        <br>
+                        <form>
+                            <strong>Choose Week:</strong>
+                            <input type="Week" placeholder="Select a Week">
+                        </form>
+                        <br>
+                        <meter min="0" max="100" value="50" optimum="75" low="25" High="75"></meter>
+
+
+
+</body>
+
+</html>
